@@ -15,6 +15,6 @@ public class MenuVO {
     private String title;       // 权限标题
     private String icon;        // 权限图标
     private String path;        // 请求地址
-    private String name;        // 前端Vue组件名称
+    private String name;        // 前端Vue组件的名称
     private List<MenuVO> children; // 子菜单列表（非null）
 }
