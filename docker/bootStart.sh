@@ -28,10 +28,10 @@ mvn clean install -Dmaven.test.skip=true || error_exit "mvn clean install（项�
 cd ./docker || error_exit "切换到docker目录"
 
 echo "停止并删除相关容器"
-docker-compose down || error_exit "docker-compose down（停止容器）"
+docker compose down || error_exit "docker-compose down（停止容器）"
 
 echo "更新镜像，并启动容器"
-docker-compose up --build -d || error_exit "docker-compose up --build（构建并启动容器）"
+docker compose up --build -d || error_exit "docker-compose up --build（构建并启动容器）"
 
 echo "删除未被使用的镜像"
 docker image prune -f || error_exit "docker image prune（清理镜像）"
