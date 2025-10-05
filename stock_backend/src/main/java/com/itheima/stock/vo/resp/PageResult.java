@@ -11,7 +11,7 @@ import java.util.List;
 @Data
 public class PageResult<T> implements Serializable {
     /**
-     * 总记录数
+     * 总记录
      */
     private Long totalRows;
 
